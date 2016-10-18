@@ -1,0 +1,12 @@
+hostinger:
+
+iotsales.esy.es
+IwhJgVs9Kd
+
+FTP:
+FTP пользователь u572478811.iotsales
+pass: 13CC7O6JjJ
+name host: ftp.iotsales.esy.es
+host: 31.170.165.146
+port: 21
+path: /home/u572478811/public_html/

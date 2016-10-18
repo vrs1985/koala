@@ -1,0 +1,751 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body {
+    background-color: #000;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+body, button, input, select, textarea {
+    color: #404040;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/*              HEADER          */
+#home{
+    z-index: 999;
+    background-color: #000;
+}
+.header-top{
+    height: 15px;
+    content: "";
+}
+.header-nav{
+    overflow: hidden;
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*  LOGO    */
+.navbar-logo{
+    padding: 0 15px 0 15px;
+    float: left;
+}
+.navbar-logo .img-responsive{
+    height: 67px;
+}
+/*  END LOGO    */
+
+.intro-text{
+    font-family: 'Teko', sans-serif;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: normal;
+    text-shadow: 0 0 1px #7a7a7a;
+    color: #060606;
+}
+.intro-subtitles{
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: normal;
+    text-shadow: 0 0 0.5px #7a7a7a;
+    color: #060606;
+}
+
+
+
+/*  NAVIGATION    */
+.navbar-menu{
+    float: right;
+}
+.nav-tabs li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.mobile-navbar{
+    display: none;
+}
+/*END NAVIGATION*/
+
+/*              END HEADER          */
+
+/*              SLIDER              */
+.slider-section{
+    width: 100%;
+    height: ;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+.video-container{
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    overflow: hidden;
+}
+video{
+    left: 0;
+    min-width: 100%;
+}
+body .slider-section .content{
+    color: #fff;
+    position: absolute;
+    left: 10%;
+    margin-top: 50px;
+    z-index: 100;
+    text-align: center;
+}
+.slider-section .content .buttons a{
+    padding: 10px 50px;
+    text-transform: capitalize;
+    background: #000;
+    color: #333;
+    text-shadow: none;
+    margin: 100px auto 0px;
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 3px;
+}
+.arrowDown #arrowDown{
+    color: rgba(256, 256, 256, 0.8);
+}
+.arrowDown a{
+    height: 100px;
+    width: 100px;
+}
+.arrowDown{
+    display: block;
+    position: fixed;
+    left: calc(50% - 30px);
+    bottom: 0px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    opacity: 0.2;
+    z-index: 998;
+    cursor: pointer;
+}
+
+/*              END SLIDER              */
+
+/*              SECTIONS               */
+.corruption-section{
+    background: #000 50% 0 no-repeat fixed;
+}
+.sections{
+    min-height: 560px;
+    }
+.about-section{
+    
+}
+.social-section{
+    background: #000 50% 0 no-repeat fixed;
+}
+.our-team-section{
+    background: #ccc  50% 0 no-repeat fixed;
+}
+.testimonials-section{
+    background: #000 50% 0 no-repeat fixed;
+}
+.get-in-touch-section{
+    /*background: url(../img/big-city523.jpg) 50% 0 no-repeat fixed;
+    background-size: cover;*/
+}
+/*              END SECTIONS            */
+/*              BACKGROUND              */
+.background-sections{
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0.1;
+    text-shadow: 0 0 1px #fff;
+}
+.backgroundTop{
+    position: relative;
+    left: -100%;
+}
+.backgroundDown{
+    position: relative;
+    right: -100%;
+}
+/*              END BACKGROUND              */
+/*              CONTACT FORM            */
+
+.contact-screen-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+.input-box, textarea {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 14px;
+    padding-left: 15px;
+    min-height: 46px;
+    background: rgba(255,255,255, 0.95);
+}
+.textarea-box {
+    border: 0;
+    text-align: left;
+    text-transform: none;
+    padding: 9px;
+    min-height: 250px;
+    padding-left: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    background: rgba(255,255,255, 0.95);
+}
+.custom-button {
+    display: block !important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    border-radius: 2.5em;
+    margin: 0 auto;
+    border: 2px solid #1a1a1a;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+.custom-button:hover {
+    background: rgba(256,256,256,0.6);
+    color: #3d3d3d;
+    text-shadow: 0px 0px 3px #fff;
+    font-weight: 600;
+}
+/*              END CONTACT FORM        */
+
+/*              FOOTER              */
+#footer{
+    display: block;
+    background: #272727;
+    line-height: 20px;
+    z-index: 999;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.company-details {
+    color: #939393;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.company-details .icon-top {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.company-details:hover {
+    color: #000;
+}
+.copyright{
+    background: #171717;
+    padding-top: 18px;
+    padding-bottom: 22px;
+}
+.copyright-box {
+    width: 100%;
+    color: #666;
+    text-align: center;
+}
+.social {
+    margin: 0 0 1.5em 0 !important;
+    padding: 0;
+    text-align: center;
+}
+.social li {
+    display: inline-block;
+    margin: 5px;
+}
+/*              END FOOTER          */
+
+.section-header {
+    text-align: center;
+    padding-bottom: 75px;
+}
+.section-header h2 {
+    padding-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 110px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.black-text{
+    color: #000;
+}
+.white-text{
+    color: #fff;
+}
+.gray-text{
+    color: #555;
+}
+a {
+    color: #777;
+    text-decoration: none;
+}
+a:hover {
+    color: #167AC6;
+    text-decoration: none;
+}
+.copyright-name{
+    color: #949393;
+}
+/*          SECTION ABOUT           */
+
+.service-icon {
+    border: 10px solid #ececec;
+    border-radius: 50%;
+    height: 180px;
+    margin: auto auto 20px;
+    position: relative;
+    transition: all 0.2s ease-in-out 0s;
+    width: 180px;
+}
+.about-pixel-icon{
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.about-pixel-icon i{
+    width: 100%;
+    height: 100%;
+}
+.iot-icon{
+    background: url() no-repeat center center;
+}
+.web-development-icon{
+    background: url() no-repeat center center;
+}
+.data-analytics-icon{
+    background: url() no-repeat center center;
+}
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
+.focus-box{
+    display: inline-block;
+}
+.focus-box h3 {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #404040;
+    display: inline-block;
+    float: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+    width: auto;
+}
+.main-border-bottom::before{
+    background: #ececec none repeat scroll 0 0;
+    bottom: -9px;
+    content: "";
+    height: 2px;
+    left: 12.5%;
+    margin: auto;
+    position: absolute;
+    width: 75%;
+    z-index: 1;
+}
+.focus-box:nth-child(3n+1) .main-border-bottom::before{
+    background: #02aef0 none repeat scroll 0 0;
+}
+.focus-box:nth-child(3n+2) .main-border-bottom::before{
+    background: #008000 none repeat scroll 0 0;
+}
+.focus-box:nth-child(3n+3) .main-border-bottom::before{
+    background: #ca0005 none repeat scroll 0 0;
+}
+.focus-box:nth-child(3n+1) .service-icon:hover {
+    border: 10px solid #02aef0;
+}
+.focus-box:nth-child(3n+2) .service-icon:hover {
+    border: 10px solid #008000;
+}
+.focus-box:nth-child(3n+3) .service-icon:hover {
+    border: 10px solid #ca0005;
+}
+a {
+outline:none !important;
+}
+
+
+@media (max-width: 480px) {
+.mobile-navbar{
+    display: inline-block;
+}
+.navbar-menu{
+    display: none;
+}
+.navbar-menu ul{
+    display: none;
+}
+.nav-tabs > li{
+    float: none;
+    text-align: right;
+    z-index: 999;
+    min-height: 35px;
+    background: rgba(17,78,103,.90) !important;
+    border-bottom: 1px solid rgba(7, 56, 75, 0.7);
+}
+.nav-tabs > li > a{
+    color: #fff;
+    font-size: 12px;
+    font-family: Helvetica;
+    text-transform: uppercase;
+}
+#home .header-nav .navbar .container{
+    width: 100%;
+}
+}
+
+@media (max-width: 768px) {
+video{
+    display: none;
+}
+.slider-section{
+    height: 390px;
+}
+body .slider-section .content{
+    left: 0;
+    margin-top: 0px;
+    width: 100%;
+}
+.intro-text{
+    font-size: 45px;
+}
+.intro-subtitles{
+    font-size: 22px;
+}
+.slider-section{
+    background: #00435C;
+}
+.buttons{
+    display: none;
+}
+.hide-on-mobile{
+    font-size: 15px;
+}
+.custom-button {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    line-height: 1.45em;
+    text-decoration: none !important;
+    max-width: 100%;
+    white-space: normal;
+    margin-bottom: 2em;
+}
+}
+@-webkit-keyframes arrow-down {
+    0%   {margin-top: 40px;}
+    100% {margin-top: 55px;}
+}
+@keyframes arrow-down {
+    0%   {margin-top: 40px;}
+    100% {margin-top: 55px;}
+}
